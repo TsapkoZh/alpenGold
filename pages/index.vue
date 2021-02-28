@@ -1,28 +1,26 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        alpenGold
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <Header />
+    <div class="container">
+      <div class="titleBlock">
+        <h1 class="title">
+          Here is your Alpen Gold Ticket<br>
+          to the exciting 2021!<br>
+          <span>Personalize your Alpen Gold tablet</span>
+        </h1>
       </div>
+
+      <div 
+        class="bar"
+
+      >
+        <div class="topBTN" />
+        <div class="leftBTN" />
+        <p class="barText">text</p>
+        <div class="leftBTN" />
+      </div>
+
+      <div class="form" /> 
     </div>
   </div>
 </template>
@@ -33,41 +31,65 @@ export default {}
 
 <style>
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
+  height: 93.3vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: url('~/assets/images/icons.png'), radial-gradient(#ffffff, #d69e35) ;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  color: #933C06;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 4rem;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.title span {
+  font-size: 1.4rem;
+  font-weight: 200;
 }
 
-.links {
-  padding-top: 15px;
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 342px;
+  width: 800px;
+  padding: 50px 100px;
+  background: url('~/assets/images/LayerDesktop 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topBTN {
+  width: 540px;
+  height: 80px;
+  background-color: crimson;
+  opacity: .4;
+}
+
+.leftBTN {
+  width: 80px;
+  height: 80px;
+  background-color: crimson;
+}
+
+.barText {
+  width: 378px;
+  height: 118px;
+  background-color: rgb(172, 62, 84);
+}
+
+.form {
+  width: 400px;
+  height: 254px;
+  background: cornsilk;
+  margin-top: 44px;
 }
 </style>
