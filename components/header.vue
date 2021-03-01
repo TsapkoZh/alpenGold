@@ -1,7 +1,7 @@
 <template>
   <div class="whiteLine">
     <img 
-      src="~/assets/images/Aplen-gold-logo 2.png"
+      src="/images/Aplen-gold-logo 2.png"
       alt="logo"
       class="logo"
     />
